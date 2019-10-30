@@ -23,10 +23,12 @@ Then("I get an element count within the shadow dom", () => {
 
 Then("I click an element within the shadow dom", () => {
     let shadowEl = $('acc-corecomponent-impersonation').shadow$('acc-impersonation-abo-autocomplete').shadow$('paper-autocomplete').shadow$('paper-input').shadow$('iron-input').$('input');
+    console.log('Element Exists: ' + shadowEl.isExisting());
     shadowEl.click();
 });
 
 Then("I enter text in an element within the shadow dom", () => {
     let shadowEl = $('acc-corecomponent-impersonation').shadow$('acc-impersonation-abo-autocomplete').shadow$('paper-autocomplete').shadow$('paper-input').shadow$('iron-input').$('input');
+    console.log('Element Exists: ' + shadowEl.isExisting());
     shadowEl.setValue('Test 12');
 });
