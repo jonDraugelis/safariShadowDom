@@ -1,0 +1,13 @@
+.idea
+allure-report/
+node_modules/
+.DS_Store
+.DS_Store?
+all-reports/*
+!all-reports/.keep
+.vscode/*
+allErrorShots/*
+!allErrorShots/.gitkeep 
+logs/*
+application/gmb/tempDownload/*
+!application/gmb/tempDownload/.gitKeep
